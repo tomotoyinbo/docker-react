@@ -6,4 +6,6 @@ before_install:
   - docker build -t tomotoyinbo/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run tomotoyinbo/docker-react npm run test -- --coverage
+  - docker run -e CI=true tomotoyinbo/docker-react npm run test
+
+language: generic
