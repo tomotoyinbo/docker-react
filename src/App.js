@@ -17,6 +17,9 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+          <p className="App-intro">
+            I was changed on the Feature branch
+          </p>
         </a>
       </header>
     </div>
